@@ -21,5 +21,24 @@ public class SquareTest {
         assertEquals(actualArea,expectedArea);
     }
 
+    @Test
+    void toFindPerimeterOfSquareUsingPositiveDimension()
+    {
+        Square square=new Square();
+        int actualArea = square.Perimeter(4);
+        int expectedArea=16;
+        assertEquals(actualArea,expectedArea);
+    }
+
+    @Test
+    void toFindPerimeterOfSquareUsingNegativeDimension()
+    {
+        Square square=new Square();
+        int actualArea = square.Perimeter(-4);
+        int expectedArea=-16;
+        assertEquals(actualArea,expectedArea);
+    }
+
+
 
 }
