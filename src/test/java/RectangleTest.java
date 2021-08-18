@@ -39,33 +39,33 @@ public class RectangleTest {
     @Test
     void toCalcuatePerimeterOfRectangleWithPositiveDimensions(){
         Rectangle rectangle=new Rectangle(4,2);
-        int actualArea=rectangle.Perimeter();
-        int expectedArea=12;
-        assertEquals(actualArea,expectedArea);
+        int actualPerimeter=rectangle.Perimeter();
+        int expectedPerimeter=12;
+        assertEquals(actualPerimeter,expectedPerimeter);
     }
 
     @Test
     void toCalcuatePerimeterOfRectangleWithNegativeDimensions(){
         Rectangle rectangle=new Rectangle(-4,-2);
-        int actualArea=rectangle.Perimeter();
-        int expectedArea=-12;
-        assertEquals(actualArea,expectedArea);
+        int actualPerimeter=rectangle.Perimeter();
+        int expectedPerimeter=-12;
+        assertEquals(actualPerimeter,expectedPerimeter);
     }
 
     @Test
     void toCalcuatePerimeterOfRectangleWithPositiveLengthAndNegativeWidth(){
         Rectangle rectangle=new Rectangle(4,-2);
-        int actualArea=rectangle.Perimeter();
-        int expectedArea=4;
-        assertEquals(actualArea,expectedArea);
+        int actualPerimeter=rectangle.Perimeter();
+        int expectedPerimeter=4;
+        assertEquals(actualPerimeter,expectedPerimeter);
     }
 
     @Test
     void toCalcuatePerimeterOfRectangleWithNegativeLengthAndPositiveWidth(){
         Rectangle rectangle=new Rectangle(-4,2);
-        int actualArea=rectangle.Perimeter();
-        int expectedArea=-4;
-        assertEquals(actualArea,expectedArea);
+        int actualPerimeter=rectangle.Perimeter();
+        int expectedPerimeter=-4;
+        assertEquals(actualPerimeter,expectedPerimeter);
     }
 
 }
